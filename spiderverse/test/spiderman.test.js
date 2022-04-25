@@ -1,3 +1,5 @@
+const spiderman = require('./../app/sipiderman');
+
 describe("Unit test for spiderman class", () => {
     test('1)Create an spiderman object', () => {
       //Escribimos el código que queremos implementar
@@ -12,5 +14,13 @@ describe("Unit test for spiderman class", () => {
       expect(andrewGarfield.actor).toBe("Andrew Garfield")
       expect(andrewGarfield.movies).toBe(2)
       expect(andrewGarfield.studio).toBe("Sony")
+    });
+    test ('2) Function that returns name and studio of the spiderman', () => 
+    {
+
+        const tomHolland = new spiderman ("Spiderman Marvel", 22, "Tom Holland",3,"Marvel")
+        
+        expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
+        
     });
   })
