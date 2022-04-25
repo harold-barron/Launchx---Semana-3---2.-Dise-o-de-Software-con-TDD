@@ -17,9 +17,8 @@ describe("Unit test for spiderman class", () => {
     });
     test ('2) Function that returns name and studio of the spiderman', () => 
     {
-
+        const spiderman = require('./../app/sipiderman')
         const tomHolland = new spiderman ("Spiderman Marvel", 22, "Tom Holland",3,"Marvel")
-        
         expect(tomHolland.getInfo()).toBe("Hey, I'm Tom Holland from Marvel studio")
         
     });
